@@ -7,7 +7,7 @@
 
 let varOne = 'varOne'
 
-//Global Scope 
+//Global Scope (varOne)
     //local scope (varTwo)
         //local scope (varFour)
     //local scope (varThree)
