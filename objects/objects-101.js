@@ -21,13 +21,13 @@ console.log(`${myBook.title} by ${myBook.author}`)
 // name, age, location
 let user = {
 name: 'Andrew',
-age: 21,
+age: 27,
 location: 'Philadelphia'
 }
 
 //generate a string like Andrew is 27 and lives in Philadelphia
-console.log(`${user.name} is ${user.age} and lives in ${user.location}`)
+console.log(`${user.name} is ${user.age} and lives in ${user.location}.`)
 
 // Increase age by 1 and print message again
-user.age = 22
-console.log(`${user.name} is ${user.age} and lives in ${user.location}`)
+user.age = 28
+console.log(`${user.name} is ${user.age} and lives in ${user.location}.`)
