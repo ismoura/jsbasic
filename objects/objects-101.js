@@ -14,3 +14,20 @@ console.log(`${myBook.title} by ${myBook.author}`)
 myBook.title = 'Animal Farm'
 //here is the out of the object with one property update
 console.log(`${myBook.title} by ${myBook.author}`)  
+
+
+//Challenge area
+
+// name, age, location
+let user = {
+name: 'Andrew',
+age: 21,
+location: 'Philadelphia'
+}
+
+//generate a string like Andrew is 27 and lives in Philadelphia
+console.log(`${user.name} is ${user.age} and lives in ${user.location}`)
+
+// Increase age by 1 and print message again
+user.age = 22
+console.log(`${user.name} is ${user.age} and lives in ${user.location}`)
