@@ -3,14 +3,14 @@ let restaurant = {
     guestCapacity: 75,
     guestCount: 0,
     //this is a method
-    checkAvailability: function(partySize) {
-     //console.log(this)
-     //   console.log(this.guestCapacity)
+    checkAvailability: function (partySize) {
+        //console.log(this)
+        //   console.log(this.guestCapacity)
 
-        let seatsLeft =  this.guestCapacity - this.guestCount
-        return partySize <= seatsLeft//true
-        },
-    seatParty: function(partySize){    
+        let seatsLeft = this.guestCapacity - this.guestCount
+        return partySize <= seatsLeft //true
+    },
+    seatParty: function (partySize) {
         this.guestCount = this.guestCapacity + partySize
     },
     removeParty: function (partySize) {
