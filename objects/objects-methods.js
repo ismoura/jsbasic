@@ -24,4 +24,4 @@ restaurant.removeParty(5)
 console.log(restaurant.checkAvailability(4))
 
 //let status = restaurant.checkAvailability(4)
-//console.log(status)
+//console.log(status)\
