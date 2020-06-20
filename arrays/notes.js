@@ -47,3 +47,25 @@ for (let count = 0 ; count < notes.length; count++){
 for (let count = notes.length -1 ; count >= 0 ; count-- ){
     console.log(notes[count])
 }
+// search array
+
+notes.indexOf('Note 2')
+console.log(notes.indexOf('Note 2')) //this code will return the position of the element in the array (1 in that case)
+console.log(notes.indexOf('Note 456')) // in this case we will get -1 because the value doesn't exist in the array
+
+const note = [{},{
+    title:'My next trip',
+    body:'I wold like to go to Spain'
+}, {
+    title:'Habits to work on',
+    body:'Exercise. Eating a bit better'
+}, {
+    title:'Office Modifications',
+    body:'Get a new seat'
+}]
+
+const index = note.findIndex(function(item, index){
+    console.log(item)
+    return item.title === 'Office Modifications'
+})
+console.log(index)
