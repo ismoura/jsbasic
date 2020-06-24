@@ -1,10 +1,10 @@
-const notes = ['Note 1', 'Note 2', 'Note 3']
+const notess = ['Note 1', 'Note 2', 'Note 3']
 
-console.log(notes)
-console.log(notes.length)
-console.log(notes[2])
+console.log(notess)
+console.log(notess.length)
+console.log(notess[2])
 
-console.log(notes[notes.length - 1])  // this code will return the same result them the code above because the param is 3 - 1 this is equal 2 and the 2 of our array is Note 3
+console.log(notess[notess.length - 1])  // this code will return the same result them the code above because the param is 3 - 1 this is equal 2 and the 2 of our array is Note 3
  
 
 // Manipulating arrays with methods 
@@ -30,7 +30,7 @@ console.log(notesMethods)
 //Looping over arrays 
 
 //here we can print the lis items with yours indexes 
-notes.forEach(function (item, index){
+notess.forEach(function (item, index){
     console.log(item)
     console.log(index)
 })
@@ -39,21 +39,21 @@ for (let count = 0 ; count <= 2 ; count++){
     console.log(count)
 }
 
-for (let count = 0 ; count < notes.length; count++){
-    console.log(notes[count])
+for (let count = 0 ; count < notess.length; count++){
+    console.log(notess[count])
 
 }
 
-for (let count = notes.length -1 ; count >= 0 ; count-- ){
-    console.log(notes[count])
+for (let count = notess.length -1 ; count >= 0 ; count-- ){
+    console.log(notess[count])
 }
 // search array
 
-notes.indexOf('Note 2')
-console.log(notes.indexOf('Note 2')) //this code will return the position of the element in the array (1 in that case)
-console.log(notes.indexOf('Note 456')) // in this case we will get -1 because the value doesn't exist in the array
+notess.indexOf('Note 2')
+console.log(notess.indexOf('Note 2')) //this code will return the position of the element in the array (1 in that case)
+console.log(notess.indexOf('Note 456')) // in this case we will get -1 because the value doesn't exist in the array
 
-const note = [{},{
+const note = [{
     title:'My next trip',
     body:'I wold like to go to Spain'
 }, {
@@ -69,3 +69,21 @@ const index = note.findIndex(function(item, index){
     return item.title === 'Office Modifications'
 })
 console.log(index)
+
+
+//================================================================================
+
+const findNote = function(note, noteTitle) {
+    return note.find(function(item, index){
+        return item.title.toLowerCase() === noteTitle.toLowerCase()
+    })}
+    
+// const findNote = function(note, noteTitle) {
+//     const index = note.findIndex(function(item, index){
+//         return item.title.toLowerCase() === noteTitle.toLowerCase()
+//     })
+//     return note[index]
+// }
+
+const notes = findNote(note,'Office Modifications')
+console.log(notes)
